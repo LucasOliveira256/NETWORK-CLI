@@ -6,18 +6,3 @@
   quit
   ip route-static x.x.x.x x.x.x.x x.x.x.x (ip desejeado , maskara, gateway)
 
-
-
-#VRP BGP
- >>VERIFICAR ROTAS ANUNCIADAS PELO PEER "X"<<
-  display bgp routing-table peer x.x.x.x advertised-routes
- >>IGNORAR PEER BGP (PARAR UM LINK)  *desfazer mesmo processo porem com "undo"<<
-  bgp (nº do AS) 
-  peer X.X.X.X ignore
-  commit
-  save
- 
-
-#VRP BNG
- >>VERIFICAR PPPoE POR INTERFACE<<
-  display access-user accounting-state accounting inter GigabitEthernet0
